@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Assistant</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Bmq5JkOmI0BC8Ais6ErhkK7eE5R86IHbky3rGmPq5l0xZoP0zXLf6ewIsEzavMeIbCxUwCfNbzfpsoorQmcwTQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+   <header class="header">
+    <a href="#" class="logo">Personal Assistant</a>
+
+    <nav class="navbar">
+        <a href="user.html" style="--i:1"class="active">Home</a>
+        <a href="weather.html" style="--i:2">Weather</a>
+        <a href="music_media.html" style="--i:3">Music & Media</a>
+        <a href="command.html" style="--i:3">Commands</a>
+        <a href="languagetranslater.html" style="--i:4">Translator</a>
+        <a href="chatbot.html" style="--i:5">Chatbot</a>
+    </nav>
+   </header>
+   <div class="container">
+    <header>
+        <h1>Jarvis Personal Voice Assistant</h1>
+        <div id="time"></div>
+        <div id="weather"></div>
+    </header>
+    <main>
+        <div class="voice-input">
+            <button id="voiceBtn"><i class="fas fa-microphone"></i><a href="index.html" style="--i:5">.</a>Speak</index></button>
+        </div>
+        <div id="voiceOutput"></div>
+    </main>
+    <div class="chatbot-icon" id="chatbotIcon">
+        <img src="chatbot.png" alt="Chatbot Icon">
+    </div>
+    
+    <main id="chatbotContainer" class="hidden">
+        <div class="chat-header">
+            <h2>Chatbot</h2>
+            <button id="closeBtn">&times;</button>
+        </div>
+        <div class="chat-box" id="chatBox"></div>
+        <input type="text" id="userInput" placeholder="Type your command...">
+        <button id="sendBtn">Send</button>
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Personal Voice Assistant. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
